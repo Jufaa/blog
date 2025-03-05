@@ -65,6 +65,6 @@ export const getArticleData = async (id: string) => {
   return {
     id,
     contentHtml,
-    date: matterResult.data.date, // Add this line to include the date property
+    date: matterResult.data.date,
   }
 };

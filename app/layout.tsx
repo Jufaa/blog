@@ -1,18 +1,13 @@
 import type { Metadata } from "next"
-import { Cormorant_Garamond, Poppins } from "next/font/google"
+import {  Open_Sans } from "next/font/google"
 import "./globals.css"
 
-const cormorantGaramond = Cormorant_Garamond({
+const openSans = Open_Sans({
   subsets: ["latin"],
-  variable: "--font-cormorant-garamond",
-  weight: ["400"],
-})
-
-const poppins = Poppins({
-  subsets: ["latin"],
-  variable: "--font-poppins",
+  variable: "--font-open-sans",
   weight: ["400", "600"],
 })
+
 
 export const metadata: Metadata = {
   title: "Jufa | Juan Cruz Francitorra",
@@ -27,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${cormorantGaramond.variable} ${poppins.variable} bg-neutral-100`}
+        className={`${openSans.variable} bg-neutral-100`} 
       >
         {children}
       </body>
